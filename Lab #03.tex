@@ -28,9 +28,9 @@
 The objectives of this lab are to learn two methods of adding sets of vectors (graphically and analytically) and thus to foster an appreciation of the differences between the two approaches.
 
 \section*{Introduction}
-A \textbf{vector} is a mathemaitcal concept which represents a quantity that has both a magnitude and a direction, unlike a \textbf{scalar} which has only a magnitude. Therefore, the process of adding vectors is more complex as well; there are two ways to find a vector sum: using the graphical method, or using the analytical method. 
+A \textbf{vector} is a mathemaitcal concept which represents a quantity that has both a magnitude and a direction, unlike a \textbf{scalar} which has only a magnitude. Therefore, the process of adding vectors is more complex as well; there are three ways to find a vector sum: graphically, analytically, or experimentally.
 
-\subsection*{Graphical Method}
+\subsection*{Graphical Methods}
 Vectors are represented graphically as arrows, with the length proportional to the magnitude and the direction represented by the direction the arrowhead points in. As can be seen in Fig. \ref{fig:1}, the graphical method can be approached in three ways.
 \begin{figure}[!ht]
 \centering
@@ -43,6 +43,29 @@ Vectors are represented graphically as arrows, with the length proportional to t
 	\item[Polygon] For situations in which more than two vectors are added, the ``head-to-tail'' method employed in the \textbf{Triangle rule} can be employed repeatedly to form a polygon constructed of vectors. In Fig. \ref{fig:1}, $\mathbf{R} ~\text{is denoted as} ~\mathbf{E}$.
 \end{description}
 
+\subsection*{Analytical Methods}
+The concept of a vector's magnitude and direction allow for more accurate mathematical methods of calculating vector sums.
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=1.5, angle=0]{lab03_analyticalvectors.jpg}
+\caption{Vector Sum broken into components and angles \label{fig:2}}
+\end{figure} 
+
+\noindent The components of a vector $\mathbf{V}$, with magnitude $V$ and angle $\theta$, are defined as
+$$ V_x = V \cos\theta$$
+\begin{equation} \label{eq:1}
+V_y = V \sin\theta
+\end{equation}
+As shown by Fig. \ref{fig:2}, after vectors $\mathbf{A} ~\text{and} ~\mathbf{B}$ are placed head-to-tail, the values of their components and angles can be used in various ways to obtain the final values of the resultant $\mathbf{R}$'s magnitude and angle. To find the components, magnitude, and direction of $\mathbf{R}$, the following formulas are used:
+$$R_x = A_x + B_x$$
+$$R_y = A_y + B_y$$
+$$R = \sqrt{R_x^2 + R_y^2}$$
+\begin{equation} \label{eq:2}
+\theta = \arctan({\frac{R_y}{R_x}})
+\end{equation}
+
+\subsection*{Experimental Methods}
+A \textbf{force table} is essentially a circular table with a rim calibrated in degrees. Weight forces are applied to a central ring by means of systems of strings and pulleys, allowing for vectors to be modeled  both in direction (by varying the direction of the string) and in magnitude (by varying the weight pulling down on the string). The equlibirant $\mathbf{E}$ of several vectors can be found by creating an additional vector to balance out the pre-existing vectors. The equilibriant is a vector force of equal magnitude but opposite direction to the resultant; thus, by finding the equilibriant one can easily calculate the resultant $\mathbf{R} = -\mathbf{E}$
 \section*{Procedure}
 
 \pagebreak
